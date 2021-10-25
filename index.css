@@ -1,0 +1,358 @@
+:root{
+    font-size: 16px;
+    font-family: sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    position: fixed;
+    top: 3%;
+    right: 1%;
+    color: white;
+    font-size: 2.5rem;
+    width: 4rem;
+    height: 4rem;
+    background: rgb(224, 63, 63);
+    border-radius: 50%;
+    display: none;
+    z-index: 1;
+}
+#cross-icon{
+    position: fixed;
+    top: 3%;
+    right: 1%;
+    color: white;
+    font-size: 2.5rem;
+    width: 4rem;
+    height: 4rem;
+    background: rgb(224, 63, 63);
+    border-radius: 50%;
+    display: none;
+    z-index: 1;
+}
+#navbar{
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top right,#201e1f,rgba(3, 3, 41,1));
+    border-right: 2px solid gray;
+}
+#navbar .image{
+    display: flex;
+    justify-content: center;
+}
+#navbar img{
+    width: 140px;
+    height: 140px;
+    border: 5px solid rgb(197, 45, 45);
+    border-radius: 50%;
+    margin-top: 5%;
+    object-fit: cover;
+}
+#navbar h1{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+#navbar #contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3px;
+}
+#navbar #contact .social-logo{
+    width: 10%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50%;
+    background: rgba(116, 113, 113, 0.5);
+    color: white;
+}
+#navbar #contact .social-logo:hover,#navbar #contact .social-logo:focus{
+    border: 3px solid rgb(199, 194, 194);
+    background: rgba(7, 7, 73, 0.808); 
+}
+#navbar ul li{
+    list-style: none;
+    width: 80%;
+    padding: 5%;
+    line-height: 3;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: rgba(173, 168, 168, 0.959);
+    font-size: 1.2rem;
+}
+#navbar i{
+    font-size: 1.5rem;
+}
+#navbar ul li:hover{
+    box-shadow: 2px 4px 8px white;
+}
+#navbar ul li:hover span{
+    color: white;
+}
+#navbar ul li:hover i{
+    color: white;
+}
+
+#main{
+    width: 75%;
+    height: auto;
+    margin-left: 25%;
+    background: linear-gradient(to top right,#353234,rgba(3, 3, 41, 1));
+    justify-self: flex-end;
+    overflow-x: hidden;
+}
+
+#welcome-section{
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid gray;
+}
+#welcome-section .header{
+    overflow: hidden;
+    transform: translateX(-5rem);
+    opacity: 0;
+    animation: slide-in-header 0.4s ease 0.7s forwards;
+}
+@keyframes slide-in-header{
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+#welcome-section h1,#welcome-section p{
+    color: white;
+}
+#welcome-section h1{
+    font-family: 'Rampart One', cursive;
+    font-size: 3rem;
+    
+}
+#welcome-section p{
+    font-family: 'Rampart One', cursive;
+    font-size: 1.5rem;
+    position: relative;
+}
+#welcome-section p::after{
+    content: "";
+    position: absolute;
+    left: 2.5rem;
+    width: 100%;
+    height: 100%;
+    background: black;
+    border-left: 1px solid white;
+    animation: typing 4s steps(20) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 108%;
+    }
+}
+#welcome-section img{
+    width: 25%;
+    height: 25%;
+    opacity: 0;
+    transform: translateY(5rem);
+    animation: slide-in-img 0.4s ease 0.5s forwards;
+}
+@keyframes slide-in-img {
+    to {
+        width: 50%;
+        height: 50%;
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+
+
+#about,#resume,#projects{
+    padding: 1rem 2rem;
+    border-bottom: 2px solid gray;
+    word-spacing: 0.3rem;
+    line-height: 1.5rem;
+}
+#about h1{
+    text-decoration: 3px underline gray;
+}
+.about ul{
+    padding-left: 2rem;
+}
+.about ul li{
+    line-height: 2;
+}
+.about ul li span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#resume h1{
+    text-decoration: 3px underline gray;
+}
+.html,.css,.javascript{
+    width: 80%;
+    height: 2.5rem;
+    background: rgb(49, 47, 47);
+    border: 1px solid white;
+    margin-bottom: 1rem;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+.html section,.css section,.javascript section{
+    display: flex;
+    padding: 0 1rem;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.html section{
+    width: 90%;
+    background: skyblue;
+}
+.css section{
+    width: 90%;
+    background: skyblue;
+}
+.javascript section{
+    width: 50%;
+    background: skyblue;
+}
+
+#projects{
+    background: rgba(3, 3, 41, 0.7);
+}
+.projects-section-header{
+    text-align: center;
+    text-decoration: 3px underline gray;
+}
+.projects{
+    text-align: center;
+}
+.projects img{
+    width: 40%;
+    height: 40vh;
+    border: 2px solid white;
+}
+.projects a{
+    text-decoration: none;
+}
+.project-title{
+    color: white;
+    width: 40%;
+    margin: auto;
+    background: gray;
+    margin-bottom: 10%;
+    border: 2px solid white;
+}
+.projects a:hover .project-title{
+    color: black;
+    background: skyblue;
+    border: 4px solid white;
+}
+.projects a:hover img{
+    border: 4px solid skyblue;
+}
+
+.go-top-btn{
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    color: white;
+    background: rgb(224, 63, 63);
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 900px){
+    :root{
+        font-size: 14px;
+    }
+    .checkbtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #cross-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+    }
+    #navbar{
+        width: 40%;
+        left: -41%;
+        z-index: 1;
+        transition: all 1s;
+    }
+    #main{
+        width: 100%;
+        margin: 0;
+    }
+    #check:checked ~ #navbar{
+        left: 0;
+    }
+    #check:checked ~ .checkbtn{
+        opacity: 0;
+    }
+    #check:checked ~ #cross-icon{
+        opacity: 1;
+    }
+}
+@media (max-width: 600px){
+    :root{
+        font-size: 10px;
+    }
+    #navbar{
+        width: 50%;
+        left: -51%;
+        z-index: 1;
+        transition: all 1s;
+    }
+}
+@media (max-width: 420px){
+    :root{
+        font-size: 9px;
+    }
+}
+@media (max-width: 380px){
+    :root{
+        font-size: 8px;
+    }
+    #navbar{
+        width: 60%;
+        left: -61%;
+        z-index: 1;
+        transition: all 1s;
+    }
+    #welcome-section h1{
+        font-size: 2.5rem;
+    }
+    #welcome-section p{
+        font-size: 1.2rem;
+    }
+}
