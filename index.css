@@ -275,6 +275,9 @@ body{
     object-fit: contain;
     border: 2px solid white;
 }
+.projects .chevrolet-logo{
+    background: rgb(63, 48, 11);
+}
 .projects a{
     text-decoration: none;
 }
