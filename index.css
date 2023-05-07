@@ -107,6 +107,7 @@ body{
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    cursor: pointer;
 }
 #navbar ul li:hover span{
     color: white;
@@ -244,16 +245,10 @@ body{
     align-items: center;
     color:rgb(17, 14, 14);
 }
-.html section{
-    width: 90%;
-    background: #88E8E3;
-}
-.css section{
-    width: 90%;
-    background: #88E8E3;
-}
+.html section,
+.css section,
 .javascript section{
-    width: 50%;
+    width: 90%;
     background: #88E8E3;
 }
 
@@ -269,18 +264,18 @@ body{
 .projects{
     text-align: center;
 }
+
+.projects a{
+    text-decoration: none;
+}
+
 .projects img{
     width: 40%;
     height: auto;
     object-fit: contain;
     border: 2px solid white;
 }
-.projects .chevrolet-logo{
-    background: rgb(63, 48, 11);
-}
-.projects a{
-    text-decoration: none;
-}
+
 .project-title{
     color: rgb(75, 70, 70);
     width: 40%;
