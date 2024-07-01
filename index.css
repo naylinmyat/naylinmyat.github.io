@@ -228,7 +228,7 @@ body{
     transform: skewX(-15deg);
     color: rgb(17, 14, 14);
 }
-.html,.css,.javascript,.flutter{
+.html,.css,.javascript,.react,.typescript,.nextjs,.javaswing,.flutter,.mysql{
     width: 80%;
     height: 2.5rem;
     background: rgb(17, 14, 14);
@@ -237,7 +237,7 @@ body{
     border-radius: 3rem;
     overflow: hidden;
 }
-.html section,.css section,.javascript section,.flutter section{
+.html section,.css section,.javascript section,.react section,.typescript section,.nextjs section,.javaswing section,.flutter section,.mysql section{
     display: flex;
     padding: 0 1rem;
     height: 100%;
@@ -245,21 +245,47 @@ body{
     align-items: center;
     color:rgb(17, 14, 14);
 }
-.html section,
-.css section,
+.html section{
+    width: 90%;
+    background: #F06529;
+}
+.css section{
+    width: 90%;
+    background: #2965F1;
+}
 .javascript section{
     width: 90%;
-    background: #88E8E3;
+    background: #F0DB4F;
+}
+.react section{
+    width: 80%;
+    background: #61DBFB;
+}
+.typescript section{
+    width: 70%;
+    background: #3178C6;
+}
+.nextjs section{
+    width: 60%;
+    background: silver;
+}
+.javaswing section{
+    width: 80%;
+    background: #E87315;
 }
 .flutter section{
     width: 50%;
-    background: lightyellow;
+    background: #6DC7EF;
+}
+.mysql section{
+    width: 50%;
+    background: #147993;
 }
 
 .projects-section-header{
     background: #780207;
-    padding: 0.5rem;
-    width: 30rem;
+    padding: 0.5rem 2rem;
+    width: max-content;
     margin: 2rem auto 3rem auto;
     text-align: center;
     transform: skewX(-15deg);
@@ -313,7 +339,7 @@ body{
     text-decoration: none;
 }
 
-.flutterSkill{
+.flutterSkill,.javaswingSkill{
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 3rem;
